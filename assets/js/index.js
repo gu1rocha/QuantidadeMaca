@@ -55,15 +55,3 @@ for(input of inputs){
         }
     });
 }
-
-let arr = ["a1","a2","a3"]
-
-let shuffleArray = newarr => { 
-    for(let i = newarr.length -1; i > 0; i--){
-        let j = Math.floor(Math.random() * (i + 1));
-        [newarr[i], newarr[j]] = [newarr[j], newarr[i]];
-    }
-    return newarr
-}
-
-console.log(shuffleArray(arr))
